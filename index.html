@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tukang Jago Balikpapan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<audio id="cardSound" preload="auto">
+  <source src="hover-sound.mp3" type="audio/mpeg" />
+</audio>
+
+<body class="flex flex-col min-h-screen">
+
+  <header>
+    <div class="header-inner">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/126/126472.png"
+        alt="Logo gear biru"
+        class="logo-img"
+        width="56"
+        height="56"
+      />
+      <div class="header-text">
+        <h1 class="header-title" title="Tukang Jago Balikpapan">Tukang Jago Balikpapan</h1>
+        <p class="header-subtitle" title="Solusi Pilihan yang tepat">Solusi Pilihan yang tepat</p>
+      </div>
+      <a
+        href="https://wa.me/+628990042495?text=Halo%2C+saya+ingin+mendapatkan+informasi"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-button"
+        >Hubungi Kami</a
+      >
+    </div>
+  </header>
+
+  <main class="flex-grow px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 py-8 max-w-7xl mx-auto w-full">
+    <section id="services" class="mb-12 max-w-6xl mx-auto">
+      <h2 class="text-center text-2xl sm:text-3xl font-semibold mb-6 text-gray-900">
+        Layanan Kami
+      </h2>
+      <p class="text-center text-gray-700 mb-10 max-w-3xl mx-auto px-2 sm:px-0 text-sm sm:text-base">
+        Kami menyediakan berbagai layanan tukang profesional untuk memenuhi kebutuhan Anda. Berikut adalah layanan yang kami tawarkan:
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8"
+        id="serviceList"
+      >
+        <!-- Urutan layanan yang relevan -->
+        <div class="card animate-on-scroll animate-on-scroll" id="tukang-ac">
+          <i class="fas fa-snowflake fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang AC</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+AC"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Perbaikan dan pemasangan AC untuk rumah dan kantor.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-listrik">
+          <i class="fas fa-bolt fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Listrik</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Listrik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Instalasi dan perbaikan sistem kelistrikan.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-pemanas air">
+          <i class="fas fa-temperature-high fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Pemanas Air</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Pemanas Air"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Instalasi dan perbaikan pemanas air untuk rumah Anda.</p>
+        </div>
+
+
+         <div class="card animate-on-scroll" id="tukang-hp">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang HP</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+HP"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Perbaikan dan servis smartphone Anda.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-air">
+          <i class="fas fa-tint fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Air / Pipa Ledeng</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+ingin+memanggil+Tukang+Air"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Instalasi dan perbaikan sistem pipa ledeng.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-bersih">
+          <i class="fas fa-broom fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Bersih-Bersih</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Bersih-Bersih"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Layanan bersih-bersih rumah dan kantor.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-sofa">
+          <i class="fas fa-couch fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Sofa</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Sofa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Jasa perbaikan dan pembuatan sofa sesuai kebutuhan Anda.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-derek">
+
+          <i class="fas fa-car-crash fa-3x text-red-600"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Derek / Towing</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+layanan+Derek"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Layanan derek mobil 24 jam.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-elektronik">
+          <i class="fas fa-plug fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Elektronik</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Elektronik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Perbaikan dan instalasi perangkat elektronik.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-cctv">
+          <i class="fas fa-video fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang CCTV</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+CCTV"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Instalasi dan perbaikan sistem CCTV untuk keamanan.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-kunci">
+          <i class="fas fa-key fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Kunci</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Kunci"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Jasa pembuatan kunci dan pembukaan pintu terkunci.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-las">
+          <i class="fas fa-fire fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Las</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Las"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Layanan pengelasan untuk berbagai kebutuhan.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-mekanik">
+          <i class="fas fa-car fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Mekanik Mobil</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Mekanik+Mobil"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Perbaikan dan servis mobil berkualitas.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-ac-mobil">
+          
+          <i class="fas fa-car fa-lg text-gray-800"></i>
+        <i class="fas fa-fan fa-sm text-blue-500 ml-1"></i>
+
+
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang AC Mobil</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+AC+Mobil"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Servis dan perbaikan AC mobil.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-angkutan">
+          <i class="fas fa-truck-pickup fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Angkutan Pindahan</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Angkutan+Pindahan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Jasa pindahan rumah dan kantor.</p>
+        </div>
+
+        <div class="card animate-on-scroll" id="tukang-talang">
+          <i class="fas fa-house-damage fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Talang / Atap</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Talang+Atap"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Perbaikan dan pemasangan talang dan atap.</p>
+        </div>
+
+      <div class="card animate-on-scroll" id="tukang-sedot">
+          <i class="fas fa-toilet fa-3x"></i>
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Tukang Sedot WC</h3>
+          <a
+            href="https://wa.me/+628990042495?text=Halo%2C+saya+butuh+Tukang+Sedot+WC"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="service-contact text-[#0071e3] font-semibold hover:underline"
+            >Hubungi Kami</a
+          >
+          <p class="text-sm sm:text-base">Layanan sedot WC cepat dan bersih.</p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tukang Jago Balikpapan.</p>
+    <p>Website ini akan terus dikembangkan berkat dukungan Anda yang telah memesan dan menggunakan layanan kami. Terima kasih atas kepercayaan Anda.</p>
+    <p>Kontak: <a class="underline" href="tel:+628990042495">08990042495</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
